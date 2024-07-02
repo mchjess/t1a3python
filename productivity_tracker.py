@@ -5,7 +5,7 @@ import sys
 
 #Timer 
 
-class task:
+class Task:
     #Creates new task and includes name and category for reporting.
     def __init__(self, name, category) :
         self.name = name
@@ -39,25 +39,25 @@ class ProductivityTracker:
     
     # Adding a task
     def add_task(self, name, category):
-        self.tasks.append(task(name,category))
+        self.tasks.append(Task (name,category))
         print("Current tasks:")
-        for task in self.tasks:
-            print(f" - {task.name} ({task.category})")
+        for Task in self.tasks:
+            print(f" - {Task.name} ({Task.category})")
     
     # Starting the task
     def start_task(self, name):
-        for task in self.tasks:
-            if task.name == name:
-                task.start()
+        for Task in self.tasks:
+            if Task.name == name:
+                Task.start()
                 print(f"Started task: {name}")
                 return
             print(f"Task {name} not found.")
     
     # Stopping the task
     def stop_task(self,name):
-        for task in self.tasks:
-            if task.name == name:
-                task.stop()
+        for Task in self.tasks:
+            if Task.name == name:
+                Task.stop()
                 print(f"Task {name} stopped.")
                 return
             print(f"Task {name} not found.")
@@ -67,10 +67,10 @@ class ProductivityTracker:
         summary = {}
         for tasks in self.tasks:
             time_spent = tasks.get_time_spent()
-            if task.category in summary:
-                summary[task.category] += time_spent
+            if Task.category in summary:
+                summary[Task.category] += time_spent
             else:
-                summary[task.category] = time_spent
+                summary[Task.category] = time_spent
                 
         print("Daily summary:")
         for category, time_spent in summary.items():
@@ -104,14 +104,14 @@ def main():
         if choice == '1':
             name = input("Enter task name: ")
             category = input("Enter task category: ")
-            tracker.add_task(name, category)
+            tracker.add_Task(name, category)
         elif choice == '2':
             name = input("Enter task name: ")
-            tracker.start_task(name)
+            tracker.start_Task(name)
             print(f"Task {name} started.")
         elif choice == '3':
             name = input("Enter task name: ")
-            tracker.stop_task(name)
+            tracker.stop_Task(name)
             print(f"Task {name} stopped.")
         elif choice == '4':
             tracker.daily_summary()
@@ -127,5 +127,5 @@ def main():
         else:
             print(f"Invalid choice. Please choose from option 1 to 5.")
     
-if __name__ == "__main__":
+#if __name__ == "__main__":
         main()
