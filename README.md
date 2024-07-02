@@ -61,14 +61,30 @@ The following conventions are adhered to in accordance with this style guide:
 
 ### Testing
 
-Once the application was fully coded, I tested the Menu functionality to ensure that all options worked.
+Once the application was fully coded, I tested the Menu functionality to ensure that all options worked. The following summary includes all testing and debugging required.
 
- Tested adding tasks.
- Tested starting tasks.
- Tested stopping tasks.
- Tested viewing the daily summary.
- Tested exporting to CSV.
- Ensured the exit option works.
+1. Tested adding tasks.
+    First test - failed.
+    Initial issue with tasks not saving to the list of tasks. Error addressed with syntax change and addition of confirmation of task added. 
+    
+    Second test - passed.
+
+ 2. Tested starting tasks.
+    First test - passed.
+
+3. Tested stopping tasks.
+    First test - failed.
+    Initial issue with timer. Syntax changed and error addressed.
+
+    Second test - passed.
+
+ 4. Tested viewing the daily summary.
+
+ 5. Tested exporting to CSV.
+    First test - passed.
+
+ 6. Ensured the exit option works.
+    First test - passed.
 
 ### Help Documentation
 

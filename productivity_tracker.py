@@ -40,6 +40,9 @@ class ProductivityTracker:
     # Adding a task
     def add_task(self, name, category):
         self.tasks.append(task(name,category))
+        print("Current tasks:")
+        for task in self.tasks:
+            print(f" - {task.name} ({task.category})")
     
     # Starting the task
     def start_task(self, name):
@@ -109,8 +112,10 @@ def main():
         elif choice == '3':
             name = input("Enter task name: ")
             tracker.stop_task(name)
+            print(f"Task {name} stopped.")
         elif choice == '4':
             tracker.daily_summary()
+            print(f"Here is your daily summary.")
         elif choice == '5':
             filename = input("Enter a filename to save your report: ")
             tracker.export_csv(filename)
