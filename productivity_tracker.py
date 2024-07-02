@@ -4,7 +4,7 @@ import csv
 
 #Timer 
 
-class Task:
+class task:
     #Creates new task and includes name and category for reporting.
     def __init__(self, name, category) :
         self.name = name
@@ -38,7 +38,7 @@ class ProductivityTracker:
     
     # Adding a task
     def add_task(self, name, category):
-        self.tasks.append(Task(name,category))
+        self.tasks.append(task(name,category))
     
     # Starting the task
     def start_task(self, name):
@@ -84,7 +84,7 @@ class ProductivityTracker:
 # User interface
 
 def main():
-    tracker - ProductivityTracker()
+    tracker = ProductivityTracker()
     
     while True:
         print("Menu:")
@@ -113,7 +113,7 @@ def main():
         filename = input("Enter a filename to save your report: ")
         tracker.export_csv(filename)
     elif choice == '6':
-        break
+        return
     # error handling
     else:
         print(f"Invalid choice. Please choose from option 1 to 5.")
