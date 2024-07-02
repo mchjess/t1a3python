@@ -7,9 +7,8 @@ import sys
 
 class Task:
     #Creates new task and includes name and category for reporting.
-    def __init__(self, name, category) :
+    def __init__(self, name) :
         self.name = name
-        self.category = category
         self.start_time = None
         self.total_time = 0
     
@@ -38,11 +37,11 @@ class ProductivityTracker:
         self.tasks = []
     
     # Adding a task
-    def add_task(self, name, category):
-        self.tasks.append(Task (name,category))
+    def add_task(self, name):
+        self.tasks.append(Task(name))
         print("Current tasks: ")
         for Task in self.tasks:
-            print(f" - {Task.name} ({Task.category})")
+            print(f" - {Task.name})")
     
     # Starting the task
     def start_task(self, name):
@@ -67,22 +66,16 @@ class ProductivityTracker:
         summary = {}
         for task in self.tasks:
             time_spent = task.get_time_spent()
-            if Task.category in summary:
-                summary[task.category] += time_spent
-            else:
-                summary[task.category] = time_spent
-                
-        print("Daily summary:")
-        for category, time_spent in summary.items():
-            print(f"{category}: {time_spent/60:2f} minutes.")
+            print("Daily summary:")
+            print(f"{task.name}: {time_spent/60:2f} minutes.")
     
     #Exportable CSV report
     def export_csv(self,filename):
         with open(filename, 'w', newline='') as csvfile:
             writer = csv.writer(csvfile)
-            writer.writerow(['Task Name','Category', 'Time Spent (minutes)'])
+            writer.writerow(['Task Name', 'Time Spent (minutes)'])
             for task in self.tasks:
-                writer.writerow([task.name, task.category, task.get_time_spent()/60])
+                writer.writerow([task.name, task.get_time_spent() / 60])
         print(f"Data exported to {filename}")
 
 # User interface
@@ -103,8 +96,7 @@ def main():
     
         if choice == '1':
             name = input("Enter task name: ")
-            category = input("Enter task category: ")
-            tracker.add_task(name, category)
+            tracker.add_task(name)
         elif choice == '2':
             name = input("Enter task name: ")
             tracker.start_task(name)
