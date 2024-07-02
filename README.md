@@ -65,7 +65,7 @@ Once the application was fully coded, I tested the Menu functionality to ensure 
 
 1. Tested adding tasks.
     First test - failed.
-    Initial issue with tasks not saving to the list of tasks. Error addressed with syntax change and addition of confirmation of task added. 
+    Initial issue with tasks not saving to the list of tasks. Error addressed with syntax change and addition of confirmation of task added. Category removed.
     
     Second test - passed.
 
