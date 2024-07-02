@@ -32,14 +32,15 @@ class Task:
 #Task manager
 
 class ProductivityTracker:
+    # New task list
     def __init__(self):
         self.tasks = []
     
-    #Adding a task
+    # Adding a task
     def add_task(self, name, category):
         self.tasks.append(Task(name,category))
     
-    #Starting the task
+    # Starting the task
     def start_task(self, name):
         for task in self.tasks:
             if task.name == name:
@@ -48,7 +49,7 @@ class ProductivityTracker:
                 return
             print(f"Task {name} not found.")
     
-    #Stopping the task
+    # Stopping the task
     def stop_task(self,name):
         for task in self.tasks:
             if task.name == name:
@@ -56,3 +57,17 @@ class ProductivityTracker:
                 print(f"Task {name} stopped.")
                 return
             print(f"Task {name} not found.")
+    
+    # Daily summary
+    def daily_summary(self):
+        summary = {}
+        for tasks in self.tasks:
+            time_spent = tasks.get_time_spent()
+            if task.category in summary:
+                summary[task.category] += time_spent
+            else:
+                summary[task.category] = time_spent
+                
+        print("Daily summary:")
+        for category, time_spent in summary.items():
+            print(f"{category}: {time_spent/60:2f} minutes.")
