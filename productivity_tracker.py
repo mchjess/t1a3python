@@ -80,3 +80,40 @@ class ProductivityTracker:
             for task in self.tasks:
                 writer.writerow([task.name, task.catefory, task.get_time_spent()/60])
         print(f"Data exported to {filename}")
+
+# User interface
+
+def main():
+    tracker - ProductivityTracker()
+    
+    while True:
+        print("Menu:")
+        print("1. Add Task")
+        print("2. Start Task")
+        print("3. Stop Task")
+        print("4. Daily Summary")
+        print("5. Export to CSV")
+        print("6. Exit")
+    
+    choice = input("Please choose from the Menu options: ")
+    
+    if choice == '1':
+        name = input("Enter task name: ")
+        category = input("Enter task category: ")
+        tracker.add_task(name, category)
+    elif choice == '2':
+        name = input("Enter task name: ")
+        tracker.stop_task(name)
+    elif choice == '3':
+        name = input("Enter task name: ")
+        tracker.stop_task(name)
+    elif choice == '4':
+        tracker.daily_summary()
+    elif choice == '5':
+        filename = input("Enter a filename to save your report: ")
+        tracker.export_csv(filename)
+    elif choice == '6':
+        break
+    # error handling
+    else:
+        print(f"Invalid choice. Please choose from option 1 to 5.")
