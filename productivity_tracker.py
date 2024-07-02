@@ -71,3 +71,12 @@ class ProductivityTracker:
         print("Daily summary:")
         for category, time_spent in summary.items():
             print(f"{category}: {time_spent/60:2f} minutes.")
+    
+    #Exportable CSV report
+    def export_csv(self,filename):
+        with open(filename, 'w', newline='') as csvfile:
+            writer = csv.writer(csvfile)
+            writer.writerow(['Task Name','Category', 'Time Spent (minutes)'])
+            for task in self.tasks:
+                writer.writerow([task.name, task.catefory, task.get_time_spent()/60])
+        print(f"Data exported to {filename}")
