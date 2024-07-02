@@ -76,7 +76,7 @@ To breakdown the creation of the application, I used a Trello board. This kept t
 
 Once the application was fully coded, I tested the Menu functionality to ensure that all options worked. The following summary includes all testing and debugging required.
 
-![image](./Testing.png)
+![image](./docs/Testing.png)
 
 #### Testing Results
 
@@ -143,38 +143,38 @@ Here is a breakdown of each option:
 1.	Select Option 1: From the main menu, type 1 and press Enter.
 2.	Enter Task Name: Type the name of the task and press Enter.
 
-![image](./Option%201.png)
+![image](./docs/Option%201.png)
 
 ##### 4.2 Start a Task
 1.	Select Option 2: From the main menu, type 2 and press Enter.
 2.	Enter Task Name: Type the name of the task you want to start and press Enter.
 
-![image](./Option%202.png)
+![image](./docs/Option%202.png)
 
 ##### 4.3 Stop a Task
 1.	Select Option 3: From the main menu, type 3 and press Enter.
 2.	Enter Task Name: Type the name of the task you want to stop and press Enter.
 
-![image](./Option%203.png)
+![image](./docs/Option%203.png)
 
 ##### 4.4 View Daily Summary
 1.	Select Option 4: From the main menu, type 4 and press Enter.
 2.	View Summary: The application will display a summary of the time spent on tasks.
 
-![image](./Option%204.png)
+![image](./docs/Option%204.png)
 
 ##### 4.5 Export Data to CSV
 1.	Select Option 5: From the main menu, type 5 and press Enter.
 2.	Enter Filename: Type the desired filename for the CSV export and press Enter.
 
-![image](./Option%205.png)
-<img src="./File saved in the same folder as program.png" alt="screenshot of file saved" width="200">
+![image](./docs/Option%205.png)
+<img src="./docs/File saved in the same folder as program.png" alt="screenshot of file saved" width="200">
 
 ##### 4.6 Exit the Application
 1.	Select Option 6: From the main menu, type 6 and press Enter.
 2.	Confirm Exit: The application will display a goodbye message and exit.
 
-![image](./Option%206.png)
+![image](./docs/Option%206.png)
 
 End of user documentation.
 
