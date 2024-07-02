@@ -118,6 +118,3 @@ def main():
     # error handling
         else:
             print(f"Invalid choice. Please choose from option 1 to 5.")
-    
-if __name__ == "__main__":
-    main()
