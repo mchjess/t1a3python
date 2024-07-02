@@ -113,7 +113,8 @@ def main():
         filename = input("Enter a filename to save your report: ")
         tracker.export_csv(filename)
     elif choice == '6':
-        return
+        print(f"Exiting the program. Goodbye.")
+        sys.exit()
     # error handling
     else:
         print(f"Invalid choice. Please choose from option 1 to 5.")

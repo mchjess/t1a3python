@@ -27,7 +27,9 @@ This [Trello board](https://trello.com/b/tQ73kRWU/implementation-plan) was used 
 
 This application has many transferrable uses. It accurately measures time spent on a user-inputted task and then returns a summary of all time spent on all tasks. This application captures and reports data for the user to interpret as they see fit.
 
-* Task Management: Add, start, and stop tasks.
+The application has a simple menu interface with options 1 - 5 to complete the following operations:
+
+* Task Management: Add, start, and stop tasks. 
 * Time Tracking: Record time spent on each task.
 * Daily Summary: Generate daily summaries of time spent per task category.
 * Data Export: Export task data to a CSV file for further analysis.
