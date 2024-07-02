@@ -11,7 +11,7 @@ The [Help Documentation](#help-documentation) contains instructions for installi
 
 This [Github repository](https://github.com/mchjess/t1a3python) was used for this application.
 
-This [Trello board](https://trello.com/b/tQ73kRWU/implementation-plan) was used to manage the project.
+This [Trello board](https://trello.com/b/1JRMfsG6/implementation-plan-terminal-application) was used to manage the project.
 
 _________
 
