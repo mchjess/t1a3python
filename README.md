@@ -1,14 +1,19 @@
 ### T1A3 - Terminal Application | Jessica McHenry
 
 This terminal application has been created to meet the requirements of Coder Academy Term 1 Assignment 3.
+___________________
 
-This application is a Task Tracker and helps users to manage and report accurately on their productivity levels over a range of tasks. Users input their tasks and use the application's timer to time how long they spend doing each task. The application can then give a daily summary showing how much time was spent on which task. This report can also be exported to CSV.
+Objective of the application: This application is a Task Tracker and helps users to manage and report accurately on their productivity levels over a range of activities. Users input their activities and use the application's timer to time how long they spend doing each one. 
 
-The [Help Documentation]() contains instructions for installing and utilising the application.
+The application can then give a daily summary showing how much time was spent on which task. This report can also be exported to CSV.
+
+The [Help Documentation](#help-documentation) contains instructions for installing and utilising the application.
 
 This [Github repository](https://github.com/mchjess/t1a3python) was used for this application.
 
 This [Trello board](https://trello.com/b/tQ73kRWU/implementation-plan) was used to manage the project.
+
+_________
 
 ### Table of Contents
 
@@ -59,26 +64,44 @@ The following conventions are adhered to in accordance with this style guide:
 
 ### Implementation Plan
 
+To breakdown the creation of the application, I used a Trello board. This kept track of coding requirements for each element of the application and testing.
+
+![image](./Timer.png)
+
+![image](./Task%20Manager.png)
+
+![image](./Command%20Line%20Interface.png)
+
 ### Testing
 
 Once the application was fully coded, I tested the Menu functionality to ensure that all options worked. The following summary includes all testing and debugging required.
 
+![image](./Testing.png)
+
+#### Testing Results
+
 1. Tested adding tasks.
-    First test - failed.
-    Initial issue with tasks not saving to the list of tasks. Error addressed with syntax change and addition of confirmation of task added. Category removed.
+
+    First test - failed. 
+ 
+   Actions - Initial issue with tasks not saving to the list of tasks. Error addressed with syntax change and addition of confirmation of task added. 
     
-    Second test - passed.
+    Second test - failed. (Task class causing an issue when adding a new task. Category option removed and problem solved.)
+
+    Third test - passed.
 
  2. Tested starting tasks.
     First test - passed.
 
 3. Tested stopping tasks.
-    First test - failed.
-    Initial issue with timer. Syntax changed and error addressed.
+    First test - failed. (Initial issue with timer. Incorrect syntax changed.)
 
     Second test - passed.
 
  4. Tested viewing the daily summary.
+    First test - failed. (Category option was causing the problem. Category removed and syntax changed to Activities.)
+
+    Second test - passed.
 
  5. Tested exporting to CSV.
     First test - passed.
@@ -86,7 +109,74 @@ Once the application was fully coded, I tested the Menu functionality to ensure 
  6. Ensured the exit option works.
     First test - passed.
 
+
+
 ### Help Documentation
+
+#### 1. Introduction
+
+The ProductivityTracker application is a command-line tool designed to help you manage your tasks and track the time spent on each task. You can add tasks, start and stop timing them, view a daily summary, and export your task data to a CSV file.
+ 
+#### 2. Installation
+Requirements
+•	Python 3.6 or higher.
+•	time and csv modules (included in the Python Standard Library).
+
+##### Installation Steps
+1.	Download the Code: Obtain the task_tracker.py file from the provided repository or source.
+2.	Save the File: Save the task_tracker.py file in a directory on your computer.
+3.	Open Terminal/Command Prompt: Navigate to the directory where you saved the file.
+
+#### 3. Running the Application
+To start the application, open your terminal or command prompt and navigate to the directory where you saved task_tracker.py. 
+
+Run the following command:
+python3 task_tracker.py
+
+#### 4. Using the Application
+Upon running the application, you will be presented with a menu of options. 
+
+Here is a breakdown of each option:
+
+##### 4.1 Add a Task
+
+1.	Select Option 1: From the main menu, type 1 and press Enter.
+2.	Enter Task Name: Type the name of the task and press Enter.
+
+![image](./Option%201.png)
+
+##### 4.2 Start a Task
+1.	Select Option 2: From the main menu, type 2 and press Enter.
+2.	Enter Task Name: Type the name of the task you want to start and press Enter.
+
+![image](./Option%202.png)
+
+##### 4.3 Stop a Task
+1.	Select Option 3: From the main menu, type 3 and press Enter.
+2.	Enter Task Name: Type the name of the task you want to stop and press Enter.
+
+![image](./Option%203.png)
+
+##### 4.4 View Daily Summary
+1.	Select Option 4: From the main menu, type 4 and press Enter.
+2.	View Summary: The application will display a summary of the time spent on tasks.
+
+![image](./Option%204.png)
+
+##### 4.5 Export Data to CSV
+1.	Select Option 5: From the main menu, type 5 and press Enter.
+2.	Enter Filename: Type the desired filename for the CSV export and press Enter.
+
+![image](./Option%205.png)
+<img src="./File saved in the same folder as program.png" alt="screenshot of file saved" width="200">
+
+##### 4.6 Exit the Application
+1.	Select Option 6: From the main menu, type 6 and press Enter.
+2.	Confirm Exit: The application will display a goodbye message and exit.
+
+![image](./Option%206.png)
+
+End of user documentation.
 
 ### References
 
