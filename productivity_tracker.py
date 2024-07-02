@@ -1,5 +1,6 @@
 import time
 import csv
+import sys
 
 
 #Timer 
@@ -95,26 +96,30 @@ def main():
         print("5. Export to CSV")
         print("6. Exit")
     
-    choice = input("Please choose from the Menu options: ")
+        choice = input("Please choose from the Menu options: ")
     
-    if choice == '1':
-        name = input("Enter task name: ")
-        category = input("Enter task category: ")
-        tracker.add_task(name, category)
-    elif choice == '2':
-        name = input("Enter task name: ")
-        tracker.stop_task(name)
-    elif choice == '3':
-        name = input("Enter task name: ")
-        tracker.stop_task(name)
-    elif choice == '4':
-        tracker.daily_summary()
-    elif choice == '5':
-        filename = input("Enter a filename to save your report: ")
-        tracker.export_csv(filename)
-    elif choice == '6':
-        print(f"Exiting the program. Goodbye.")
-        sys.exit()
+        if choice == '1':
+            name = input("Enter task name: ")
+            category = input("Enter task category: ")
+            tracker.add_task(name, category)
+        elif choice == '2':
+            name = input("Enter task name: ")
+            tracker.stop_task(name)
+        elif choice == '3':
+            name = input("Enter task name: ")
+            tracker.stop_task(name)
+        elif choice == '4':
+            tracker.daily_summary()
+        elif choice == '5':
+            filename = input("Enter a filename to save your report: ")
+            tracker.export_csv(filename)
+        elif choice == '6':
+            print(f"Exiting the program. Goodbye.")
+            sys.exit()
+   
     # error handling
-    else:
-        print(f"Invalid choice. Please choose from option 1 to 5.")
+        else:
+            print(f"Invalid choice. Please choose from option 1 to 5.")
+    
+if __name__ == "__main__":
+        main()
