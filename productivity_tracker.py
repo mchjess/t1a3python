@@ -104,7 +104,8 @@ def main():
             tracker.add_task(name, category)
         elif choice == '2':
             name = input("Enter task name: ")
-            tracker.stop_task(name)
+            tracker.start_task(name)
+            print(f"Task {name} started.")
         elif choice == '3':
             name = input("Enter task name: ")
             tracker.stop_task(name)

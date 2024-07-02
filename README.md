@@ -61,6 +61,15 @@ The following conventions are adhered to in accordance with this style guide:
 
 ### Testing
 
+Once the application was fully coded, I tested the Menu functionality to ensure that all options worked.
+
+ Tested adding tasks.
+ Tested starting tasks.
+ Tested stopping tasks.
+ Tested viewing the daily summary.
+ Tested exporting to CSV.
+ Ensured the exit option works.
+
 ### Help Documentation
 
 ### References
