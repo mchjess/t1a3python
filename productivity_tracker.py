@@ -21,7 +21,7 @@ class task:
     # Timer stop
     def stop(self):
         if self.start_time is not None:
-            self.total_time += time.time() - self.start
+            self.total_time += time.time() - self.start_time
             self.start_time = None
     
     # Returns the total time spent on a task.
