@@ -66,11 +66,11 @@ The following conventions are adhered to in accordance with this style guide:
 
 To breakdown the creation of the application, I used a Trello board. This kept track of coding requirements for each element of the application and testing.
 
-![image](./Timer.png)
+![image](./docs/Timer.png)
 
-![image](./Task%20Manager.png)
+![image](./docs/Task%20Manager.png)
 
-![image](./Command%20Line%20Interface.png)
+![image](./docs/Command%20Line%20Interface.png)
 
 ### Testing
 
@@ -86,7 +86,9 @@ Once the application was fully coded, I tested the Menu functionality to ensure 
  
    Actions - Initial issue with tasks not saving to the list of tasks. Error addressed with syntax change and addition of confirmation of task added. 
     
-    Second test - failed. (Task class causing an issue when adding a new task. Category option removed and problem solved.)
+    Second test - failed. 
+    
+    Actions - (Task class causing an issue when adding a new task. Category option removed and problem solved.)
 
     Third test - passed.
 
