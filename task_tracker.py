@@ -2,7 +2,7 @@ import time
 import csv
 import sys
 
-# Timer class for activities
+# Timer for tasks
 class Activity:
     def __init__(self, name):
         self.name = name
@@ -23,7 +23,7 @@ class Activity:
             return self.total_time + time.time() - self.start_time
         return self.total_time 
 
-# Activity manager class
+# Task manager 
 class ProductivityTracker:
     def __init__(self):
         self.activities = []
