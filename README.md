@@ -182,5 +182,21 @@ End of user documentation.
 
 ### References
 
+1. Cokelaer, Thomas. "Notes about booleans and logical operators." Thomas Cokelaer, https://thomas-cokelaer.info/tutorials/python/boolean.html. Accessed 30 June 2024.
+
+2. "Python Coder | Beginner | Loop." Dr Codie, https://www.youtube.com/watch?v=g4JYCIM8cJ8&t=2s. Accessed 28 June 2024.
+
+2. Muhammad Yasoob Ullah Khalid. (n.d.). "Ternary Operators." Python Tips 0.1 documentation, https://book.pythontips.com/en/latest/ternary_operators.html. Accessed 29 June 2024.
+
+3. OpenAI ChatGPT. (n.d.). ChatGPT, https://chatgpt.com/. Accessed 1 July 2024.
+
+4. Python Software Foundation. "4. More Control Flow Tools." Python 3 Documentation. docs.python.org, 2020. Accessed 30 June 2024.
+
+5. Python Software Foundation. "6. Expressions." The Python Language Reference. docs.python.org, 2020. Accessed 30 June 2024.
+
+6. Tagliaferri, Lisa. "Understanding Boolean Logic in Python 3." DigitalOcean Community Tutorials, https://www.digitalocean.com/community/tutorials/understanding-boolean-logic-in-python-3. Accessed 29 June 2024.
+
+
+
 
 
